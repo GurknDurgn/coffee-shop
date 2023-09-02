@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+// color settings
+$colorBlack:        #000;
+$colorWhite:        #fff;
+$colorAction:      	#e4e4d0;
+$colorchc:          #2392d8;
+$colorActHover:     #94cdee;
+
+
+// font family from fonts.scss
+// $Gotham-Light :'Gotham-Light',Sans-Serif;
+// $Gotham-Medium :'Gotham-Medium',Sans-Serif;
+// $Gotham-Bold :'Gotham-Bold',Sans-Serif;
+// $Gotham-Black :'Gotham-Black',Sans-Serif;
+// $Gotham-Thin:'Gotham-Thin',Sans-Serif;
+
+
+@mixin media($point) {
+    @if $point == tablet {
+        @media (min-width: 400px) {
+            @content;
+        }
+    }
+    @if $point == desktop {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
