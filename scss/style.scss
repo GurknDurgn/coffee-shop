@@ -14,7 +14,13 @@
 
 //navbar
 .navbar {
-  background-color: #402218;
+  background-color: $colorGlobal;
+  @include media(tablet) {
+    background-color: $colorActHover;
+  }
+  @include media(desktop) {
+    background-color: #e5890a;
+  }
   .container {
     .navbar-brand {
       text-decoration: none;
@@ -28,7 +34,10 @@
     .navbar-nav {
       .nav-item {
         a {
-          color: #e4cda7;
+          color: $colorLink;
+          @include media(desktop) {
+            color: $colorWhite;
+          }
         }
       }
       .nav-item:hover {
